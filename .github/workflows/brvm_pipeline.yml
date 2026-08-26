@@ -29,7 +29,7 @@ jobs:
       - name: Exécution des scripts Python
         run: | 
         download_brvm_report.py
-        parsing_orc        
+        parsing_orc.py       
 
       # 6. Publier (Push) le fichier CSV mis à jour sur GitHub
       - name: Commit et Push du fichier CSV
