@@ -11,7 +11,7 @@ pandas
 PyMuPDF
 Pillow
 
-# OCR & Machine Learning (Requis pour easyocr)
+# OCR & Machine Learning
 torch
 torchvision
-easyocr
+paddleocr
