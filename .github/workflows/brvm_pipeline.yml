@@ -35,11 +35,11 @@ jobs:
         run: |
           python download_brvm_report.py
           python parsing_orc.py
-      # 6. Publier (Push) le fichier CSV mis à jour sur GitHub
+ # 6. Commit et Push automatique des résultats
       - name: Commit et Push du fichier CSV
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add brvm_financial_database_clean.csv
-          git commit -m "Mise à jour automatique des données BRVM [skip ci]" || exit 0
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Mise a jour automatique des donnees BRVM [skip ci]" || exit 0
           git push
