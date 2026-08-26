@@ -1,0 +1,17 @@
+# Automate & Scraping
+playwright
+requests
+beautifulsoup4
+cloudscraper
+
+# Data manipulation
+pandas
+
+# PDF & Text Processing
+PyMuPDF
+Pillow
+
+# OCR & Machine Learning (Requis pour easyocr)
+torch
+torchvision
+easyocr
