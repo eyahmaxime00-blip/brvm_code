@@ -19,12 +19,11 @@ jobs:
         with:
           python-version: '3.10'
 
-     # 4. Installation des dépendances système, Python et Playwright
+    # 4. Installation des dépendances système, Python et Playwright
       - name: Installation des dépendances
         run: |
           sudo apt-get update && sudo apt-get install -y libgl1-mesa-glx libglib2.0-0
           python -m pip install --upgrade pip
-          pip install playwright
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           python -m playwright install --with-deps
 
