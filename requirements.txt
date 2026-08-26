@@ -10,8 +10,10 @@ pandas
 # PDF & Text Processing
 PyMuPDF
 Pillow
+pdf2image
 
 # OCR & Machine Learning
 torch
 torchvision
+easyocr
 paddleocr
