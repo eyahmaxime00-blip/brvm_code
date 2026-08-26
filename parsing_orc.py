@@ -4,7 +4,7 @@ from paddleocr import PaddleOCR
 from pdf2image import convert_from_path
 
 # 1. Initialisation du moteur PaddleOCR (français/anglais, mode détection de tableaux)
-ocr = PaddleOCR(use_angle_cls=True, lang='fr', show_log=False)
+ocr = PaddleOCR(use_angle_cls=True, lang='fr')
 
 DOSSIER_PDF = "etats_financiers_brvm"
 DOSSIER_SORTIE = "output_parsed"
