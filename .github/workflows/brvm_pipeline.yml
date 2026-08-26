@@ -27,8 +27,9 @@ jobs:
 
       # 5. Exécuter vos scripts d'extraction et parsing
       - name: Exécution des scripts Python
-        run: |
-          python main.py  # Remplacez "main.py" par le nom exact de votre script d'entrée
+        run: | 
+        download_brvm_report.py
+        parsing_orc        
 
       # 6. Publier (Push) le fichier CSV mis à jour sur GitHub
       - name: Commit et Push du fichier CSV
